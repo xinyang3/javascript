@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es6",//ecmascript支持版本
+        "lib": [
+            "es2015",
+            "es2016"
+        ],
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "removeComments": false,//是否移除文档注释
+        "sourceMap": false,//是否生成对应的map文件
+        "allowJs": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "baseUrl": "./",
+        "rootDir": ".",
+        "outDir": "outs",//指定输出目录文件夹名称
+        "paths": {}
+    },
+    "include": [
+        "apis/*"
+    ]
+}
