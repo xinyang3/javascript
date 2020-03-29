@@ -81,6 +81,7 @@ let second = [3, 4];
 let bothPlus = [0, ...first, ...second, 5];
 let defaults = { food: "spicy", price: "$$", ambiance: "noisy" };
 let search = Object.assign(Object.assign({}, defaults), { food: "rich" }); // {food: "spicy", price: "$$", ambiance: "noisy"}
+// 它仅包含对象 自身的可枚举属性
 class C {
     constructor() {
         this.p = 12;
