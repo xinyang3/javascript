@@ -11,7 +11,7 @@ let octalLiteral: number = 0o744;
 // string
 let name1: string = `Gene`;
 let age: number = 37;
-let sentence: string = `Hello, my name is ${ name }`
+let sentence: string = `Hello, my name is ${ name1 }`
 
 // array
 let list: number[] = [1, 2, 3];

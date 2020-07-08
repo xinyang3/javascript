@@ -9,7 +9,8 @@ class Person {
     public age: string;
     // constructor(name: string) { this.name = name; }
     // 构造函数也可以被标记成 protected。 这意味着这个类不能在包含它的类外被实例化，但是能被继承
-    protected constructor(theName: string) { this.name = theName; }
+    // protectd constructor(theName: string) { this.name = theName; }
+    constructor(theName: string) { this.name = theName; }
 }
 
 class Employee extends Person {
@@ -21,7 +22,7 @@ class Employee extends Person {
     }
 
     public getElevatorPitch() {
-        this.address;
+        // this.address;
         this.name;
         this.age;
         return `Hello, my name is ${this.name} and I work in ${this.department}.`;
@@ -30,7 +31,7 @@ class Employee extends Person {
 let person = new Person("aa");
 let howard = new Employee("Howard", "Sales");
 console.log(howard.getElevatorPitch());
-howard.name; // 错误
+// howard.name; // 错误
 howard.age;
 
 /** 
@@ -105,7 +106,7 @@ class AccountingDepartment extends Department {
     }
 }
 let department: Department, accountingDepartment: Department;
-department = new Department('') // 抽象类不能实例化
+// department = new Department('') // 抽象类不能实例化
 accountingDepartment = new AccountingDepartment('');
 accountingDepartment.printMeeting
-accountingDepartment.generatReports; // 抽象类型里没有定义的方法
+// accountingDepartment.generatReports; // 抽象类型里没有定义的方法

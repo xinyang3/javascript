@@ -6,9 +6,9 @@ interface SquareConfig {
   
 function createSquare(config: SquareConfig): { color: string; area: number } {
 let newSquare = {color: "white", area: 100};
-if (config.clor) {
+if (config.color) {
     // Error: Property 'clor' does not exist on type 'SquareConfig'
-    newSquare.color = config.clor;
+    newSquare.color = config.color;
 }
 if (config.width) {
     newSquare.area = config.width * config.width;
@@ -128,12 +128,12 @@ class TextBox extends Control {
 }
 
 // Error: Property 'state' is missing in type 'Image'.
-class Image implements SelectableControl {
-     state: any;
-    select() { 
-        // this.state
-    }
-}
+// class Image implements SelectableControl {
+//      state: any;
+//     select() { 
+//         // this.state
+//     }
+// }
 
 let button = new Button();
 button.select
