@@ -1,0 +1,29 @@
+{
+  "name": "es-sam",
+  "version": "1.0.0",
+  "description": "es6 sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinyang3/es-sam.git"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "xinyang3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xinyang3/es-sam/issues"
+  },
+  "homepage": "https://github.com/xinyang3/es-sam#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7"
+  }
+}

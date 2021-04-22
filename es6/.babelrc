@@ -1,0 +1,18 @@
+{
+    "presets": [
+        [
+　　　　　　"@babel/preset-env",
+　　　　　　{
+　　　　　　　　"targets":{
+　　　　　　　　　　"browsers":["ie>=8","chrome>=62"],
+　　　　　　　　　　"node":"8.9.0"
+　　　　　　　　},
+　　　　　　　　"modules":false,
+　　　　　　　　"debug":true,
+　　　　　　　　"useBuiltIns":"usage"
+　　　　　　}
+　　　　],
+        // "es2015",
+        // "stage-2",
+    ]
+}
